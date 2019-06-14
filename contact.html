@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>bootstrap-portfolio</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -13,6 +13,8 @@
 <body>
     <!-- Wrap all page content here -->
     <div id="wrap">
+
+
         <!-- Begin page content -->
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -24,13 +26,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
                         </li>
 
                     </ul>
@@ -39,33 +41,26 @@
 
             <div class="jumbotron vertical-center">
                 <div class="container">
-                    <h1 class="display-3">About Me</h1><img
-                        src="https://avatars3.githubusercontent.com/u/25408515?s=460&v=4" alt="Picture of Peter">
+                    <h1 class="display-3">Contact Me</h1>
                     <p class="lead"></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <p>My name is Peter and I would love to help <em>you</em> with your next web based creation. I
-                        am
-                        passionate
-                        about designing web applications to solve problems. My toolset includes: HTML5, CSS,
-                        Javascript, React,
-                        Node.JS, and more. If you have a problem that needs solving, need a simple website or even a
-                        community
-                        to
-                        reach all your customers, we can work to get it built and solve your problem. Check out my
-                        github repo
-                        if you are interested in looking at code. You can also reach out to me if you are interested
-                        in
-                        working together on something.
-                    </p>
-                    <p>Contact me so we can get your problem solved! I gurantee we will make something great. Take a
-                        look at my portfolio to see some of my previous work.
-                        Again, feel free to <strong><a href="contact.html">contact</a></strong> me if you are
-                        interested in working together. You can also reach out if you want to chat about:
-                        Woodworking, bash scripting, Linux automation, Raspberry Pi builds, DIY projects, Power
-                        tools, Home renovations, and 3D Printing.</p>
+                    <section class="contact-form">
+                        <form id="contact-form" method="POST" action="">
+                            <span class="form-class">Name</span>
+                            <input class="form-class" type="text" name="name" id="name" placeholder="John Smith"
+                                required><br><br>
+                            <span class="form-class">Email</span>
+                            <input class="form-class" type="email" name="email" id="email" placeholder="you@email.com"
+                                required><br><br>
+                            <span class="form-class">Message</span>
+                            <br>
+                            <textarea class="form-class" id="message_area" name="Message" rows="8px" cols="40px"
+                                placeholder="your message here" required></textarea><br><br>
+                            <button class="btn_submit">Submit</button>
+                    </section>
                 </div>
             </div>
         </div>
